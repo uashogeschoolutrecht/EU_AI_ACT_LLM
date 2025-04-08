@@ -1,0 +1,95 @@
+/* Set the default font family for the entire document */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style for messages in the chat, ensuring they are displayed flexibly and aligned centrally */
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Additional styling for user messages, aligning them to the start (left) */
+.message.user {
+    justify-content: flex-start;
+}
+
+/* Additional styling for assistant messages, aligning them to the start (left) */
+.message.assistant {
+    justify-content: flex-start;
+}
+
+/* Style for the icon within a message, adding a margin to the right */
+.message .icon {
+    margin-right: 10px;
+}
+
+/* Style for loading animations */
+.loading {
+    animation: blink 1.4s infinite both;
+}
+
+/* Keyframes for the blink animation, changing opacity from 0 to 1 */
+@keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Style for custom buttons in the sidebar */
+.sidebar .custom-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Hover effect for custom buttons in the sidebar */
+.sidebar .custom-button:hover {
+    background-color: #0056b3;
+}
+
+/* Focus effect for custom buttons in the sidebar, removing the outline */
+.sidebar .custom-button:focus {
+    outline: none;
+}
+
+/* Active state for custom buttons in the sidebar */
+.sidebar .custom-button.active {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+/* Style for star rating component, displayed in a row and spaced between */
+.star-rating {
+    display: flex;
+    direction: row;
+    font-size: 2em;
+    justify-content: space-between;
+}
+
+/* Hide the default input elements for the star rating */
+.star-rating input {
+    display: none;
+}
+
+/* Style for star labels, setting color to grey and cursor to pointer */
+.star-rating label {
+    color: grey;
+    cursor: pointer;
+}
+
+/* Hover and checked effects for star labels, changing color to gold */
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    color: gold;
+}
