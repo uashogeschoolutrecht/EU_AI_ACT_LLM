@@ -43,7 +43,7 @@ pydeck==0.9.1
 pygments==2.18.0
 python-dateutil==2.9.0.post0
 python-engineio==4.9.0
-python-socketio==5.11.2
+python-socketio==5.14.0
 pytz==2024.1
 referencing==0.35.1
 requests==2.31.0
