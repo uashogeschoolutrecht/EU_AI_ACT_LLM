@@ -61,7 +61,7 @@ tornado==6.4
 tqdm==4.66.4
 typing-extensions==4.11.0
 tzdata==2024.1
-urllib3==2.2.1
+urllib3==2.6.0
 watchdog==4.0.0
 websocket-client==1.8.0
 werkzeug==3.0.3
